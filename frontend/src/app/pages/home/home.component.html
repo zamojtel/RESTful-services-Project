@@ -1,0 +1,16 @@
+<mat-card>
+  <mat-card-title>Dane giełdowe</mat-card-title>
+  <mat-card-content class="block-center">
+    <form class="mat-form block-center" [formGroup]="currencyForm" (ngSubmit)="sendForm()">
+      <mat-form-field appearance="fill">
+        <mat-label>Wybierz datę</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="date" required="false">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit">Wyślij</button>
+    </form>
+  </mat-card-content>
+</mat-card>
+

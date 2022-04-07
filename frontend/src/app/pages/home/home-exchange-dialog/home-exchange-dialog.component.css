@@ -1,0 +1,33 @@
+.mat-column-position {
+  width: 5px;
+  border-right: 1px solid currentColor;
+  padding-right: 24px;
+  text-align: center;
+}
+
+.mat-column-name {
+  text-align: center;
+}
+
+.mat-column-price {
+  width: 32px;
+  border-left: 1px solid currentColor;
+  padding-left: 24px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+}
+
+div.title-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5px;
+}
+
+div.close {
+  cursor: pointer;
+  color: #c2185b;
+}
